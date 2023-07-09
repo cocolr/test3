@@ -53,7 +53,7 @@ namespace test3.UI
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 42);
+            this.textBox1.Location = new System.Drawing.Point(154, 42);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 28);
             this.textBox1.TabIndex = 1;
@@ -85,7 +85,7 @@ namespace test3.UI
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(155, 99);
+            this.textBox3.Location = new System.Drawing.Point(154, 99);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 28);
             this.textBox3.TabIndex = 5;
@@ -102,6 +102,7 @@ namespace test3.UI
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(504, 98);
+            this.dateTimePicker1.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 28);
             this.dateTimePicker1.TabIndex = 7;
@@ -119,18 +120,18 @@ namespace test3.UI
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(13, 241);
+            this.dataGridView1.Location = new System.Drawing.Point(14, 242);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 30;
-            this.dataGridView1.Size = new System.Drawing.Size(775, 211);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 212);
             this.dataGridView1.TabIndex = 9;
             // 
             // AddClass
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 416);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);

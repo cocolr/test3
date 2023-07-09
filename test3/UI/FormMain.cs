@@ -28,5 +28,11 @@ namespace test3.UI
             RegisterSudent frm = new RegisterSudent();
             frm.ShowDialog();
         }
+
+        private void 修改ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangeClass frm = new ChangeClass();
+            frm.ShowDialog();
+        }
     }
 }

@@ -36,5 +36,18 @@ namespace test3.BLL
 
             db.SaveChanges();
         }
+
+        public void ChangeClass(string cno,string name, string master, DateTime entertime)
+        {
+            Class _class = db.Class.SingleOrDefault(x => x.cno == cno);
+            if (_class == null)
+                throw new Exception("该条班级记录不存在");
+            _class.name = name;
+            _class.master = master;
+            _class.entertime = entertime;
+
+            db.SaveChanges();
+        }
+
     }
 }

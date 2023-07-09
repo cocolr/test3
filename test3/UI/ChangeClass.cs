@@ -12,10 +12,10 @@ using test3.Model;
 
 namespace test3.UI
 {
-    public partial class AddClass : Form
+    public partial class ChangeClass : Form
     {
         Model1 context = new Model1();
-        public AddClass()
+        public ChangeClass()
         {
             InitializeComponent();
         }
@@ -28,11 +28,11 @@ namespace test3.UI
         {
             try
             {
-                if (textBox1.Text == "" && textBox2.Text == "")
+                if (textBox3.Text == "" && textBox1.Text == "")
                 {
                     throw new Exception("必须填写班级编号和班级");
                 }
-                StudentService.defaultInstance.AddClass(textBox1.Text.Trim(), textBox2.Text.Trim(), textBox3.Text.Trim(), dateTimePicker1.Value);
+                StudentService.defaultInstance.ChangeClass(textBox3.Text.Trim(), textBox1.Text.Trim(), textBox2.Text.Trim(),  dateTimePicker1.Value);
                 this.DialogResult = System.Windows.Forms.DialogResult.OK;
             }
             catch (Exception ex)
@@ -40,11 +40,14 @@ namespace test3.UI
                 MessageBox.Show(ex.Message);
                 this.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             }
+
         }
 
-        private void AddClass_Load(object sender, EventArgs e)
+        private void ChangeClass_Load(object sender, EventArgs e)
         {
-            showAll();
+            // TODO: 这行代码将数据加载到表“studentDataSet2.Class”中。您可以根据需要移动或删除它。
+            this.classTableAdapter.Fill(this.studentDataSet2.Class);
+
         }
     }
 }

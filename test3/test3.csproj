@@ -88,6 +88,24 @@
     <Compile Include="UI\ChangeClass.Designer.cs">
       <DependentUpon>ChangeClass.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ChangeStudentclass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ChangeStudentclass.Designer.cs">
+      <DependentUpon>ChangeStudentclass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CheckClass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CheckClass.Designer.cs">
+      <DependentUpon>CheckClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CheckStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CheckStudent.Designer.cs">
+      <DependentUpon>CheckStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +117,12 @@
     </Compile>
     <Compile Include="UI\RegisterSudent.Designer.cs">
       <DependentUpon>RegisterSudent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\UnregisterStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\UnregisterStudent.Designer.cs">
+      <DependentUpon>UnregisterStudent.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -114,6 +138,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ChangeClass.resx">
       <DependentUpon>ChangeClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CheckClass.resx">
+      <DependentUpon>CheckClass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

@@ -92,6 +92,7 @@ namespace test3.UI
             this.查看ToolStripMenuItem.Name = "查看ToolStripMenuItem";
             this.查看ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.查看ToolStripMenuItem.Text = "查看";
+            this.查看ToolStripMenuItem.Click += new System.EventHandler(this.查看ToolStripMenuItem_Click);
             // 
             // 学生ToolStripMenuItem
             // 
@@ -116,18 +117,21 @@ namespace test3.UI
             this.注销ToolStripMenuItem.Name = "注销ToolStripMenuItem";
             this.注销ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.注销ToolStripMenuItem.Text = "注销";
+            this.注销ToolStripMenuItem.Click += new System.EventHandler(this.注销ToolStripMenuItem_Click);
             // 
             // 转班ToolStripMenuItem
             // 
             this.转班ToolStripMenuItem.Name = "转班ToolStripMenuItem";
             this.转班ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.转班ToolStripMenuItem.Text = "转班";
+            this.转班ToolStripMenuItem.Click += new System.EventHandler(this.转班ToolStripMenuItem_Click);
             // 
             // 查看ToolStripMenuItem1
             // 
             this.查看ToolStripMenuItem1.Name = "查看ToolStripMenuItem1";
             this.查看ToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.查看ToolStripMenuItem1.Text = "查看";
+            this.查看ToolStripMenuItem1.Click += new System.EventHandler(this.查看ToolStripMenuItem1_Click);
             // 
             // FormMain
             // 

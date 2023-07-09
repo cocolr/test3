@@ -47,6 +47,7 @@ namespace test3.UI
         {
             // TODO: 这行代码将数据加载到表“studentDataSet2.Class”中。您可以根据需要移动或删除它。
             this.classTableAdapter.Fill(this.studentDataSet2.Class);
+            showAll();
 
         }
     }

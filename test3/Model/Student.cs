@@ -25,8 +25,6 @@ namespace test3.Model
         public string state { get; set; }
 
         [StringLength(10)]
-        public string cno { get; set; }
-
-        //public virtual Class Class { get; set; }
+        public string cname { get; set; }
     }
 }

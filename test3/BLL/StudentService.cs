@@ -12,7 +12,7 @@ namespace test3.BLL
         public static StudentService defaultInstance = new StudentService();
         Model1 db = new Model1();
 
-        public void RegisterSudent(string sno, string sname,string sex,DateTime birthtime,string cno)
+        public void RegisterSudent(string sno, string sname,string sex,DateTime birthtime,string cname)
         {
             Student x = new Student();
             x.sno = sno;
@@ -20,7 +20,7 @@ namespace test3.BLL
             x.sex = sex;
             x.birthtime = birthtime;
             x.state = "就读";
-            x.cno = cno;
+            x.cname = cname;
             db.Student.Add(x);
             db.SaveChanges();
         }
@@ -49,5 +49,30 @@ namespace test3.BLL
             db.SaveChanges();
         }
 
+        public Student findSudentBysno(string sno)
+        {
+            return db.Student.SingleOrDefault(x => x.sno == sno);
+        }
+
+        public void UnregisterStudent(string sno, string state)
+        {
+            Student x = db.Student.SingleOrDefault(s => s.sno == sno);
+            if (x != null)
+            {
+                x.state = state;
+                db.SaveChanges();
+            }
+        }
+
+        public void StuChangeclass(string sno, string cname)
+        {
+            Student x = db.Student.SingleOrDefault(s => s.sno == sno);
+            if (x != null)
+            {
+                x.cname = cname;
+                db.SaveChanges();
+            }
+        }
+        
     }
 }

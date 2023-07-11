@@ -76,6 +76,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>StudentDataSet2.xsd</DependentUpon>
     </Compile>
+    <Compile Include="StudentDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StudentDataSet3.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UI\AddClass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,14 +144,23 @@
     <EmbeddedResource Include="UI\ChangeClass.resx">
       <DependentUpon>ChangeClass.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\ChangeStudentclass.resx">
+      <DependentUpon>ChangeStudentclass.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\CheckClass.resx">
       <DependentUpon>CheckClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CheckStudent.resx">
+      <DependentUpon>CheckStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\RegisterSudent.resx">
       <DependentUpon>RegisterSudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\UnregisterStudent.resx">
+      <DependentUpon>UnregisterStudent.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -190,6 +204,17 @@
     </None>
     <None Include="StudentDataSet2.xss">
       <DependentUpon>StudentDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDataSet3.xsc">
+      <DependentUpon>StudentDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="StudentDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StudentDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="StudentDataSet3.xss">
+      <DependentUpon>StudentDataSet3.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

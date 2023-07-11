@@ -46,7 +46,7 @@ namespace test3.Model
                 .IsFixedLength();
 
             modelBuilder.Entity<Student>()
-                .Property(e => e.cno)
+                .Property(e => e.cname)
                 .IsFixedLength();
         }
     }
